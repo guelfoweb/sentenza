@@ -217,7 +217,7 @@ print(f"Most common token: '{list(token_counts.keys())[0]}' appears {list(token_
 
 ## Project Status
 
-This is an experimental project in active development. The approaches and algorithms may change as we test and refine the library. Feedback and contributions are welcome to help improve this testing ground for text processing methods.
+This is an experimental project in active development. The approaches and algorithms may change as I test and refine the library. Feedback and contributions are welcome to help improve this testing ground for text processing methods.
 
 ## License
 
