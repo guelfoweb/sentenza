@@ -71,6 +71,18 @@ with open('document.txt', 'r', encoding='utf-8') as f:
 
 ## Working with Chunks
 
+How it calculates the chunks:
+
+`chunk_size = int(mean_length + 3 * std_dev)`
+
+`size` is the sum of the mean length + 3 times the standard deviation.
+
+`chunk_overlap = int(std_dev * 1.5)`
+
+`overlap` is 1.5 times the standard deviation.
+
+Too much overlap may cause excessive redundancy, storage and computation efficiency problems, and bias in retrieval results.
+
 ```python
 # Extract sentences
 sentences = list(tokenizer.sentences_stream(text))
@@ -87,7 +99,7 @@ print(f"Created {len(semantic_chunks)} chunks")
 
 # Example output:
 # Suggested chunk size: 1188 characters
-# Suggested overlap: 596 characters
+# Suggested overlap: 326 characters
 # Estimated chunks needed: 4
 # Created 5 chunks
 ```
