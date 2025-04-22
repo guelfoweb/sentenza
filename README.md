@@ -145,6 +145,18 @@ tokenizer.plotting(sentences, filename="my_sentence_histogram.png")
 
 ![Image](https://github.com/user-attachments/assets/69535092-dc03-4bfe-aac1-a53f07b94aea)
 
+The histogram in the figure, resulting from the processing of a literal text, shows the distribution of 1011 sentences, with an average length of 118.48 characters and a standard deviation of 94.49, indicating a significant variability in the lengths of sentences in your corpus.
+
+A limitation of the current approach emerges from the asymmetric distribution of sentence lengths, characterized (see graph) by a long tail to the right. This indicates that a single value of Chunk_size may not be adequate for the entire corpus, and that sentences much longer than the average may need dedicated treatment.
+
+The graph helps to make more informed decisions, balancing computational efficiency with content coherence, two key aspects in processing large texts for NLP applications.
+
+From the graph view, it is also noticeable that most of the sentences have a length that does not exceed 200 characters, with a concentration between 50 and 150.
+
+The purple line indicates the mean, while the dotted lines represent the standard deviation (+212.97 and -23.99), offering an immediate view of the variability of the corpus.
+
+Finally, two segmentation parameters were calculated: a chunk size of 401 characters (red line) and an overlap of 141 (green line), for an estimated total of 461 chunks. The colored areas — green for overlap and pink for chunk length — make it visually clear how these values are distributed with respect to the real sentences.
+
 ## Integration Example
 
 The following example demonstrates how to use sentenza with popular embedding and vector database libraries for RAG applications. This example specifically uses the HuggingFace Sentence Transformers model "all-MiniLM-L6-v2" for creating embeddings and FAISS (Facebook AI Similarity Search) as the vector database.
