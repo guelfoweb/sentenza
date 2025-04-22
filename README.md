@@ -4,11 +4,11 @@ A Python library for extracting and processing sentences from text with statisti
 
 ## Overview
 
-sentenza is an experimental project that aims to address common challenges in text chunking for NLP applications. It was developed as a test solution to explore better ways of dividing texts into semantically meaningful segments that preserve context while maintaining reasonable chunk sizes.
+Splitting text into chunks is a fundamental step in building a high-quality vector database. When generating embeddings for RAG systems, the granularity and semantic coherence of the segments directly influence the accuracy and relevance of search results. Chunks that are too short excessively fragment the content, while chunks that are too long risk merging unrelated information, reducing the effectiveness of queries.
 
-Proper text chunking is particularly important in Retrieval Augmented Generation (RAG) systems. When creating vector databases for RAG, the way text is divided into chunks significantly impacts retrieval quality. Chunks that are too large may contain irrelevant information, while chunks that are too small may lose important context. Furthermore, arbitrary chunking methods that split text in the middle of sentences can disrupt semantic coherence and lead to poor retrieval results.
+To address this challenge, I wrote a Python library (sentenza), still in an experimental phase, that aims to optimize the text chunking process. The project was born from the need to have a tool that tries to efficiently split the text and that also offers a visual analysis of the distribution of sentences to support more informed decisions on chunking parameters.
 
-The library attempts to extract sentences from text and create optimized chunks based on statistical properties of the input material. While still in development, it offers an alternative approach to fixed-size chunking methods that often break sentences arbitrarily or create inefficient text divisions.
+The entire process is strictly linked to the tokenizer used. Correct identification of sentence boundaries is essential to apply effective chunking strategies. In this case, the sentence adopts a simple approach on texts already extracted from documents, generating a graph useful for analyzing the length distribution and adjusting the segmentation parameters.
 
 ## The Challenge
 
