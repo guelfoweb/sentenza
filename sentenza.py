@@ -264,7 +264,7 @@ class Tokenizer:
         
         # The overlap can be set as a percentage of the chunk_size
         # or based on the standard deviation
-        chunk_overlap = int(std_dev * 2) # 2 times the standard deviation
+        chunk_overlap = int(std_dev * 1.5) # 1.5 times the standard deviation
         
         # Calculate estimated number of chunks needed
         total_text_length = sum(sentence_lengths)

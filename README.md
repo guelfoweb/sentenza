@@ -131,7 +131,7 @@ tokenizer.plotting(sentences, filename="my_sentence_histogram.png")
 # (Creates histogram_with_chunks.png or my_sentence_histogram.png)
 ```
 
-![Image](https://github.com/user-attachments/assets/6059d5ab-21c3-403b-ae7b-6eaed9e813e0)
+![Image](https://github.com/user-attachments/assets/69535092-dc03-4bfe-aac1-a53f07b94aea)
 
 ## Integration Example
 
