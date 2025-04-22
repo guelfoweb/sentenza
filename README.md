@@ -8,7 +8,7 @@ Splitting text into chunks is a fundamental step in building a high-quality vect
 
 To address this challenge, I wrote a Python library (sentenza), still in an experimental phase, that aims to optimize the text chunking process. The project was born from the need to have a tool that tries to efficiently split the text and that also offers a visual analysis of the distribution of sentences to support more informed decisions on chunking parameters.
 
-The entire process is strictly linked to the tokenizer used. Correct identification of sentence boundaries is essential to apply effective chunking strategies. In this case, the sentence adopts a simple approach on texts already extracted from documents, generating a graph useful for analyzing the length distribution and adjusting the segmentation parameters.
+The entire process is strictly linked to the tokenizer used. Correct identification of sentence boundaries is essential to apply effective chunking strategies. In this case, `sentenza` adopts a simple approach on texts already extracted from documents, generating a graph useful for analyzing the length distribution and adjusting the segmentation parameters.
 
 ## The Challenge
 
