@@ -145,7 +145,7 @@ tokenizer.plotting(sentences, filename="my_sentence_histogram.png")
 
 ![Image](https://github.com/user-attachments/assets/69535092-dc03-4bfe-aac1-a53f07b94aea)
 
-The histogram in the figure, resulting from the processing of a literary text, shows the distribution of 1011 sentences, with an average length of 118.48 characters and a standard deviation of 94.49, indicating a significant variability in the lengths of sentences in your corpus.
+The histogram in the figure, resulting from the processing of a literary text, shows the distribution of 1011 sentences, with an average length of 118.48 characters and a standard deviation of 94.49, indicating a significant variability in the lengths of sentences in the corpus.
 
 A limitation of the current approach emerges from the asymmetric distribution of sentence lengths, characterized (see graph) by a long tail to the right. This indicates that a single value of Chunk_size may not be adequate for the entire corpus, and that sentences much longer than the average may need dedicated treatment.
 
